@@ -62136,10 +62136,10 @@ async function deleteDeployment({ apiToken, projectName, accountId, branchName, 
 }
 async function runAction() {
     try {
-        const accountId = (0,core.getInput)("account_id", { required: true });
-        const apiToken = (0,core.getInput)("api_token", { required: true });
-        const branchName = (0,core.getInput)("branch_name", { required: true });
-        const projectName = (0,core.getInput)("project_name", { required: true });
+        const accountId = (0,core.getInput)("accountId", { required: true });
+        const apiToken = (0,core.getInput)("apiToken", { required: true });
+        const branchName = (0,core.getInput)("branchName", { required: true });
+        const projectName = (0,core.getInput)("projectName", { required: true });
         await deleteDeployment({ apiToken, projectName, accountId, branchName });
     }
     catch (error) {
