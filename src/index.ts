@@ -43,10 +43,10 @@ async function deleteDeployment({
 
 async function runAction() {
   try {
-    const accountId = getInput("account_id", { required: true });
-    const apiToken = getInput("api_token", { required: true });
-    const branchName = getInput("branch_name", { required: true });
-    const projectName = getInput("project_name", { required: true });
+    const accountId = getInput("accountId", { required: true });
+    const apiToken = getInput("apiToken", { required: true });
+    const branchName = getInput("branchName", { required: true });
+    const projectName = getInput("projectName", { required: true });
 
     await deleteDeployment({ apiToken, projectName, accountId, branchName });
   } catch (error: unknown) {
